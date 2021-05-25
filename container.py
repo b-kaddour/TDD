@@ -21,7 +21,7 @@ class Container:
         """
         if self.capacity >= quantity:
             self.capacity -= quantity
-            self.durability += 1
+            self.durability -= 1
         else:
             print("impossible de boire")
 
