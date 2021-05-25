@@ -34,7 +34,7 @@ class TestContainer(unittest.TestCase):
         temp_durability = self.c.durability
         self.c.drink(25)
         #la durabilité doit baisser
-        self.assertEqual(self.c.durability, temp_durability-1.5)
+        self.assertEqual(self.c.durability, temp_durability-1)
 
     def test_durability_after_fill_in(self):
         # le joueur remplit le contenant doi perdre 0.5 point de durabilité
